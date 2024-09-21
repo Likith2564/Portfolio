@@ -770,3 +770,117 @@ body {
   --navbar-text-color: #000000;
   --icon-color: #000000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-input-container {
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-input:focus {
+  border-color: #4070f4;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4070f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #305acb;
+}
+
+.form-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ff4f4f;
+  display: none;
+}
+
+
+
+.dark-theme {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background: #1a1a1a;
+  --navbar-text-color: #ffffff;
+  --icon-color: #ffffff;
+}
+
+/* Contact Section Dark Theme Adjustments */
+.dark-theme .contact-form {
+  background-color: #333333; /* Darker background for the form */
+  color: #ffffff; /* Light text color */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Softer shadow for dark theme */
+}
+
+.dark-theme .contact-input {
+  background-color: #444444; /* Darker input background */
+  color: #ffffff; /* White text for the input */
+  border: 1px solid #666666; /* Border color that stands out in dark mode */
+}
+
+.dark-theme .contact-input:focus {
+  border-color: #4070f4; /* Keeping the blue focus color */
+}
+
+.dark-theme .contact-button {
+  background-color: #4070f4; /* Same button color */
+  color: #ffffff; /* White text */
+}
+
+.dark-theme .contact-button:hover {
+  background-color: #305acb; /* Darker hover effect for the button */
+}
+
+.dark-theme .form-message {
+  color: #ff4f4f; /* Error message color remains the same */
+}
+
+/* Light Theme (default) */
+.contact-form {
+  background-color: #f9f9f9;
+  color: #000000;
+}

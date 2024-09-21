@@ -47,7 +47,7 @@ const showMenu = ( toggleId, navId ) => {
   /*===== COPY Email =====*/
   const copy = document.getElementById( "copy" );
   copy.addEventListener( "click", () => {
-    navigator.clipboard.writeText( "zulfiqarshaikhofficial92@gmail.com" );
+    navigator.clipboard.writeText( "likithraj8899@gmail.com" );
     copy.innerHTML = "copied";
     setTimeout( () => {
       copy.innerHTML = null;
@@ -119,3 +119,52 @@ themeIcon.addEventListener('click', function () {
     themeIcon.classList.replace('bx-moon', 'bx-sun'); // Change to sun icon for light theme
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission behavior
+
+  // Grab the form values
+  const name = event.target.name.value.trim();
+  const email = event.target.email.value.trim();
+  const phone = event.target.phone.value.trim();
+  const company = event.target.company.value.trim();
+  const message = event.target.message.value.trim();
+
+  // Validate form data (add any custom validation here if needed)
+  if (!name || !email || !phone || !message) {
+    document.getElementById("form-message").textContent = "Please fill out all required fields.";
+    document.getElementById("form-message").style.display = "block";
+    return;
+  }
+
+  // Clear previous error messages
+  document.getElementById("form-message").style.display = "none";
+
+  // You can send the form data to a backend or service like Formspree here
+  // Example:
+  // axios.post('your-endpoint', { name, email, phone, company, message }).then(response => {
+  //   console.log(response);
+  // });
+
+  // Simulate form submission success
+  document.getElementById("form-message").textContent = "Your message has been sent successfully!";
+  document.getElementById("form-message").style.display = "block";
+  document.getElementById("form-message").style.color = "green";
+
+  // Clear form after submission
+  event.target.reset();
+});
+
+
+
